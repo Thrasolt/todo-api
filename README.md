@@ -11,7 +11,7 @@
 
 ### Setup Database
 
-`docker run --name todo -e POSTGRES_DB=todo_api_dev -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432`
+`docker run --name todo -e POSTGRES_DB=todo_api_dev -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres`
 
 
 #### **`todo_app/config/dev.exs`**
