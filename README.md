@@ -1,21 +1,18 @@
-
 # Todo API with Phoenix and Elixir 
 
 
 ## Get started 
 
 
-`echo yes | mix phx.new todo_api --no-html`
+`mix phx.new todo_api --no-html`
 
 `cd todo_api`
 
 
 ### Setup Database
 
-`docker run --name todo -e POSTGRES_DB=todo_api_dev -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 -v database:/var/lib/postgresql/data postgres`
+`docker run --name todo -e POSTGRES_DB=todo_api_dev -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 
 
-
-### Connect Phoenix to DB and create DB
 
 #### **`todo_app/config/dev.exs`**
 ``` elixir
@@ -39,7 +36,7 @@ config :todo_api, TodoApi.Repo,
 
 `mix phx.server`
 
-[localhost/4000](http://localhost:4000/)
+[localhost:4000](http://localhost:4000/)
 
 ### See something
 
@@ -71,7 +68,7 @@ defmodule TodoApiWeb.Router do
 end
 ```
 
-### Create DeafaulController 
+### Create DefaultController 
 
 #### **`todo_app/lib/todo_app_web/controller/default_controller.ex`**
 ``` elixir
@@ -88,7 +85,7 @@ end
 
 ### Check
 
-[localhost/4000](http://localhost:4000/)
+[localhost:4000](http://localhost:4000/)
 
 ## JSON API
 
